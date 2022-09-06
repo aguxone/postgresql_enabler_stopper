@@ -30,7 +30,7 @@ Only compatible with with Windows at the time being, but it will become cross-pl
 - Use "Start" and "Stop" button to initialize or stop the service saved on the ini file.
 
 ## Compilation from source:
-You can easily compile this app (if you have already used wxWidgets before) with the included makefiles "dynamic.makefile" and "static.makefile". If you compile you dynamically you'll have to include the dynamic libraries wxbase32u_gcc_custom.dll and wxmsw32u_core_gcc_custom.dll in the same folder of the .exe file.
+You can easily compile this app (if you have already used wxWidgets before) with the included makefiles "dynamic.makefile" and "static.makefile". If you compile your app dynamically you'll have to include the dynamic libraries wxbase32u_gcc_custom.dll and wxmsw32u_core_gcc_custom.dll in the same folder of the .exe file.
 The makefiles are made so that the required files files are present in the following direcotires (typically 2 folders up):
 dynamic.makefile
 . wxWidgets include folder:
@@ -51,10 +51,8 @@ static.makefile
        ./resources/resources.rc
 
 
-If you are new to wxWidgets, you must first compile the wxWidgets library with YOUR compiler or use released binaries that matches exactly the version of your compiler (in my case i compiled mine, i used the MinGW compiler version 11.2.0 compiled by Brecht Sanders https://www.winlibs.com/), know that you must compile a "dynamic" version and/or "static" version of the library according to your need. Here's a guide for windows user, though they are basically the same steps for others OS using "make" https://moritzmolch.com/blog/2510.html. If you are for example using code-blocks as your ide, to today's date it is using the old mingw gcc version 8.1.0 as compiler (a popular version) and there binaries of wxWidgets already available on their main site.
-Once you have your libraries (basically 2 include folders and one lib folder) on the right folders you just from console or script:
-mingw32-make static.makefile
+If you are new to wxWidgets, you must first compile the wxWidgets library one time with YOUR compiler or use the released binaries that matches exactly the version of your compiler (in my case i compiled mine, i used the MinGW compiler version 11.2.0 compiled by Brecht Sanders https://www.winlibs.com/); know that you must compile a "dynamic" version and/or "static" version of the library according to your needs. Here's a guide for windows users, although they are basically the same steps for others OSs using "make" https://moritzmolch.com/blog/2510.html. If you are using for example code-blocks as your ide, to today's date it commes with a default compiler which is the old mingw gcc version 8.1.0 (a popular version) and there are binaries of wxWidgets already available for this version on their main site.
+Once you have your libraries (basically 2 include folders and one lib folder) on the right folders, you just run the makefile from console or script:
+. mingw32-make static.makefile
 Or the dyanmic.makefile and your executable is ready to use.
 You can compress with UPX to reduce the size to a third.
- 
-
