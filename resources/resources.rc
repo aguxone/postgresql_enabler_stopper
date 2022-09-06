@@ -1,0 +1,27 @@
+// resource bitmaps for buttons
+// First loading all the resources with it's own syntax
+// variable_name varible_type path_to_resource
+
+// pruebuchi BITMAP "pruebita.png" //bitmap could work for images
+// but image files from other format could be corrupted
+
+taskbar_icon_resource RCDATA "postgreapp_icon.png"
+// Windows application executables must be an icofile.
+// It is not necessary to be assigned IN the main file, windows
+// grabs the first ICON file type in the resources by alphabetical
+// order (that's why it's called aaaa so many times)
+aaaa ICON "postgreapp_icon.ico"
+
+// We can make definitions but AFTER the resources load
+// #define variable_name variable_number_identifier(optional)
+// Some people put all the below code on a header file and includes it in
+// their main code, i think it's not practical.
+#define aaaa 101
+#define taskbar_icon_resource 102
+#define wxUSE_DPI_AWARE_MANIFEST 2 // For loading the adequate manifest
+// from wx.rc. "1" would also work, 0 is using default manifest.
+
+// Weird enough, if we want to load resources from another file
+// like in this case, we must do so AT THE VERY END with and include
+// and it will load  the other resources, a manifest file here.
+#include "../../../librerias_cpp/wx3_2_0/include/wx/msw/wx.rc"
