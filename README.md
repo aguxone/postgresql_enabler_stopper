@@ -33,21 +33,34 @@ Only compatible with Windows at the time being, but it will become cross-platfor
 You can easily compile this app (if you have already used wxWidgets before) with the included makefiles "dynamic.makefile" and "static.makefile". If you compile your app dynamically you'll have to include the dynamic libraries wxbase32u_gcc_custom.dll and wxmsw32u_core_gcc_custom.dll in the same folder of the .exe file.
 The makefiles are made so that the required files files are present in the following direcotires (typically 2 folders up):
 dynamic.makefile
+
 . wxWidgets include folder:
+
        ../../librerias_cpp/wx_3_2_0/include
        ../../librerias_cpp/wx3_2_0/lib_release_dynamic/mswu
+       
 . wxWidgets library folder:
+
        ../../librerias_cpp/wx3_2_0/lib_release_dynamic
+       
 . resources folder and file:
+
        ./resources/resources.rc
 
 static.makefile
+
 . wxWidgets include folder:
+
        ../../librerias_cpp/wx_3_2_0/include
+       
        ../../librerias_cpp/wx3_2_0/lib_release_static/mswu
+       
 . wxWidgets library folder:
+
        ../../librerias_cpp/wx3_2_0/lib_release_dynamic
+       
 . resources folder and file:
+
        ./resources/resources.rc
 
 
