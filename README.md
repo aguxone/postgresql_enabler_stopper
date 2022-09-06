@@ -4,7 +4,7 @@
 ## Description
 Using PostgreSQL only sporadically for some of your projects? With PostgreSQL Enabler-Stopper you can disable the posgresSQL server running in the background with one click.
 The application will automatically detect the postgreSQL service on windows and disable it for you (you can define the service you want to enable or disable).
-Only compatible with with Windows at the time being, but it will become cross-platform in the future.
+Only compatible with Windows at the time being, but it will become cross-platform in the future.
 <!-- ![screen-gif](./prueba_rando_creator.gif) -->
 <!-- <img src="https://github.com/aguxone/agux_random_file_creator/blob/gif_storage/prueba_rando_creator.gif?raw=true" alt="agxu_rfc_gif" width="60%" height="40%"> -->
 <img src="https://github.com/aguxone/postgresql_enabler_stopper/blob/gif-storage-branch/500x341_15fps.gif?raw=true" alt="postgresql_es_gif" width="70%" height="40%">
