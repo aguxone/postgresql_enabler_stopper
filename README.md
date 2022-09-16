@@ -66,6 +66,8 @@ static.makefile
 
 If you are new to wxWidgets, you must first compile the wxWidgets library one time with YOUR compiler or use the released binaries that matches exactly the version of your compiler (in my case i compiled mine, i used the MinGW compiler version 11.2.0 compiled by Brecht Sanders https://www.winlibs.com/); know that you must compile a "dynamic" version and/or "static" version of the library according to your needs. Here's a guide for windows users, although they are basically the same steps for others OSs using "make" https://moritzmolch.com/blog/2510.html. If you are using for example code-blocks as your ide, to today's date it commes with a default compiler which is the old mingw gcc version 8.1.0 (a popular version) and there are binaries of wxWidgets already available for this version on their main site.
 Once you have your libraries (basically 2 include folders and one lib folder) on the right folders, you just run the makefile from console or script:
-. mingw32-make static.makefile
-Or the dyanmic.makefile and your executable is ready to use.
+
+       mingw32-make static.makefile
+
+Or the dyanamic.makefile and your executable is ready to use.
 You can compress with UPX to reduce the size to a third.
